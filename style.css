@@ -14,14 +14,15 @@ body {
   position: relative;
   width: 100%;
   margin-bottom: 30px;
-  background-image: url("images/Group\ 8\ \(1\).png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  aspect-ratio: 16 / 9;
-  /* border-radius: 10px; */
+}
+.map.hidden {
+  display: none;
 }
 
+.map img {
+  width: 100%;
+  border-radius: 10px;
+}
 .overlay-image {
   position: absolute;
   top: 0%;
