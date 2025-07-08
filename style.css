@@ -11,7 +11,7 @@ body {
 }
 
 .map {
-   display: block;
+  display: block;
   position: relative;
   width: 100%;
   margin-bottom: 30px;
@@ -24,78 +24,70 @@ body {
   width: 100%;
   border-radius: 10px;
 }
+
 .overlay-image {
   position: absolute;
-  top: 0%;      /* ajuste en % ou px */
+  top: 0%;
   left: 0%;
-  /* right:50px; */
-  width: 150px;  /* taille personnalisée */
-  z-index: 10;   /* très important : au-dessus des autres */
-  pointer-events: none; /* optionnel : l'image ne bloque pas les clics */
-  margin-top:58px;
+  width: 150px;
+  z-index: 10;
+  pointer-events: none;
+  margin-top: 58px;
 }
 
 .hotspot {
   position: absolute;
-  
   width: 150px;
   height: 70px;
   cursor: pointer;
-  /* background-color: rgba(0, 153, 255, 0.3); */
-  border: 0.5px solid #ACD5D7;
+  border: 0.5px solid #acd5d7;
   border-radius: 6px;
   transition: 0.3s;
-  
 }
+
 .hotspot img {
-  width: 150px;    /* 🔁 augmente pour agrandir */
-  height: auto;   /* conserve le ratio */
+  width: 150px;
+  height: auto;
 }
 
 .hotspot:hover {
-  background-color:#ACD5D7;
+  background-color: #acd5d7;
 }
 
 .cards {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
-  margin-right:200px;
+  margin-right: 200px;
   margin-left: 200px;
-  
-
-/* height: 2000px; */
 }
 
 .card {
-   display: none; 
-  /* display: block; */
+  display: none;
   background: white;
   padding: 30px;
   width: 100%;
-  border-left: 5px solid #DF3C69;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-left: 5px solid #df3c69;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   position: relative;
   opacity: 0;
   transition: opacity 0.4s ease;
   height: 520px;
-  
-  
+  text-align: center;
 }
 
 .card img {
   margin-top: 130px;
   max-width: 40%;
-  /* width:50px; */
   border-radius: 20px;
-  margin-left:220px;
-  
-}
-.cards.active {
+  margin-left: auto;
+  margin-right: auto;
   display: block;
 }
 
+.cards.active {
+  display: block;
+}
 
 /* Close button */
 .close-btn {
@@ -113,10 +105,57 @@ body {
   color: red;
 }
 
-
-
 .card.show {
   display: block;
   opacity: 1;
-
 }
+
+/* ✅ Responsive Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .map {
+    margin-bottom: 20px;
+  }
+
+  .hotspot {
+    width: 80px;
+    height: auto;
+  }
+
+  .hotspot img {
+    width: 80px;
+  }
+
+  .overlay-image {
+    width: 100px;
+    margin-top: 30px;
+  }
+
+  .cards {
+    margin: 0 10px;
+  }
+
+  .card {
+    padding: 15px;
+    height: auto;
+  }
+
+  .card img {
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+  }
+
+  .close-btn {
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+  }
+}
+
