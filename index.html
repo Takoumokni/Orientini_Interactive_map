@@ -1,66 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Parcours Interactif</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <div class="container">
-    <div class="map">
-      <img src="images/elif1.png" alt="Parcours" class="base-map"/>
-
-      
-      <div class="hotspot" data-target="card1" style="top: 15%; left: 80%;margin-top: 50px;" title="Clôture de l'événement"> <img src="images/rCloture.png" alt="Clôture"></div>
-      <div class="hotspot" data-target="card2" style="top: 15%; left: 65%;" title="Stands des représentants"> <img src="images/rStand.png" alt="Stands"></div>
-      <div class="hotspot" data-target="card3" style="top: 15%; left: 50%;margin-top: 50px;" title="Pause café"> <img src="images/rPausecafe.png" alt="pause Café"></div>
-      <div class="hotspot" data-target="card4" style="top: 15%; left: 35%;" title="Cérémonie d’ouverture"> <img src="images/rCérémonie.png" alt="Cérémonie"></div>
-      <div class="hotspot" data-target="card5" style="top: 15%; left: 20%;margin-top: 50px;" title="Réception des invités"> <img src="images/rRéception.png" alt="Accueil"></div>
-      <div ><img src="images/Facebook_post_-_1__4_-removebg-preview.png"class="overlay-image" alt="overlay"></div>
-
-    </div>
-
-    <div class="cards">
-  <div id="card1" class="card">
-    <button class="close-btn">✖</button>
-    <strong>Temp:</strong> "13:00 - 13:30 (30 min)"<br>
-    <strong>Description:</strong> Remerciements aux participants.
-    <img src="images/remerciment.jpg" alt="Clôture" />
-  </div>
-
-  <div id="card2" class="card">
-    <button class="close-btn">✖</button>
-    <strong>Temp:</strong> "11:00 - 13:00 (2h)"<br>
-    <strong>Description:</strong> Découvrez les stands.
-    <img src="images/stands1.jpg" alt="Stands" />
-  </div>
-
-  <div id="card3" class="card">
-    <button class="close-btn">✖</button>
-    <strong>Temp:</strong> "10:30 - 11:00 (30 min)"<br>
-    <strong>Description:</strong> Pause café conviviale.
-    <img src="images/pauseCafé.jpg" alt="Pause café" />
-  </div>
-
-  <div id="card4" class="card">
-    <button class="close-btn">✖</button>
-    <strong>Temp:</strong> "09:20 - 10:30 (1h10)"<br>
-    <strong>Description:</strong> Cérémonie d’ouverture.
-    <img src="images/conference12.jpg" alt="Cérémonie" />
-  </div>
-
-  <div id="card5" class="card">
-    <button class="close-btn">✖</button>
-    <strong>Temp:</strong> "09:00 - 09:20 (20 min)"<br>
-    <strong>Description:</strong> Accueil des participants.
-    <img src="images/RECEPTION.jpg" alt="Accueil" />
-  </div>
-</div>
- <script src="script.js"></script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -72,67 +9,80 @@
 <body>
 
   <div class="container">
+    <!-- 🗺️ MAP INTERACTIVE -->
     <div class="map">
-      <img src="images/elif1.png" alt="Parcours" class="base-map"/>
+      <img src="images/elif1.png" alt="Parcours" class="base-map" />
 
-       
-      <div class="hotspot" data-target="card1" style="top: 15%; left: 80%;margin-top: 50px;" title="Clôture de l'événement"> <img src="images/rCloture.png" alt="Clôture"></div>
-      <div class="hotspot" data-target="card2" style="top: 15%; left: 65%;" title="Stands des représentants"> <img src="images/rStand.png" alt="Stands"></div>
-      <div class="hotspot" data-target="card3" style="top: 15%; left: 50%;margin-top: 50px;" title="Pause café"> <img src="images/rPausecafe.png" alt="pause Café"></div>
-      <div class="hotspot" data-target="card4" style="top: 15%; left: 35%;" title="Cérémonie d'ouverture"> <img src="images/rCérémonie.png" alt="Cérémonie"></div>
-      <div class="hotspot" data-target="card5" style="top: 15%; left: 20%;margin-top: 50px;" title="Réception des invités"> <img src="images/rRéception.png" alt="Accueil"></div>
-      <div><img src="images/Facebook_post_-_1__4_-removebg-preview.png" class="overlay-image" alt="overlay"></div>
+      <!-- Hotspots cliquables -->
+      <div class="hotspot" data-target="card1" style="top: 15%; left: 80%; margin-top: 50px;" title="Clôture de l'événement">
+        <img src="images/rCloture.png" alt="Clôture">
+      </div>
+      <div class="hotspot" data-target="card2" style="top: 15%; left: 65%;" title="Stands des représentants">
+        <img src="images/rStand.png" alt="Stands">
+      </div>
+      <div class="hotspot" data-target="card3" style="top: 15%; left: 50%; margin-top: 50px;" title="Pause café">
+        <img src="images/rPausecafe.png" alt="Pause Café">
+      </div>
+      <div class="hotspot" data-target="card4" style="top: 15%; left: 35%;" title="Cérémonie d'ouverture">
+        <img src="images/rCérémonie.png" alt="Cérémonie">
+      </div>
+      <div class="hotspot" data-target="card5" style="top: 15%; left: 20%; margin-top: 50px;" title="Réception des invités">
+        <img src="images/rRéception.png" alt="Accueil">
+      </div>
+
+      <!-- Overlay décoratif -->
+      <div>
+        <img src="images/Facebook_post_-_1__4_-removebg-preview.png" class="overlay-image" alt="overlay">
+      </div>
     </div>
 
+    <!-- 🧾 CARTES D'INFORMATIONS -->
     <div class="cards">
+
       <div id="card1" class="card">
-     <div id="activeCard" class="card"></div>
         <button class="close-btn">✖</button>
-        <strong>Temp:</strong> "13:00 - 13:30 (30 min)"<br><br>
-        <strong>Description:</strong> Remerciements aux participants et partenaires.<br>Fin officielle.<br>
-        <img src="images/remerciment.jpg" alt="Clôture" />
+        <strong>Temp:</strong> 13:00 - 13:30 (30 min)<br><br>
+        <strong>Description:</strong> Remerciements aux participants et partenaires. Fin officielle.<br>
+        <img src="images/remerciment.jpg" alt="Clôture">
       </div>
 
       <div id="card2" class="card">
-         <div id="activeCard" class="card"></div>
         <button class="close-btn">✖</button>
-        <strong>Temp:</strong> "11:00 - 13:00 (2h)"<br><br>
-        <strong>Description:</strong>  "Découvrez les stands de spécialités. Quiz et jeux à gagner !"
-         <div style="display: flex;">
-        <img src="images/stands1.jpg" alt="Stands" style="margin-left: 40px;margin-right:70px;"/>
-          <img src="images/quiz.jpg" alt="Stands"style="margin-left: 10px;margin-right:10px;" />
+        <strong>Temp:</strong> 11:00 - 13:00 (2h)<br><br>
+        <strong>Description:</strong> Découvrez les stands de spécialités. Quiz et jeux à gagner !<br><br>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+          <img src="images/stands1.jpg" alt="Stands" style="max-width: 45%;">
+          <img src="images/quiz.jpg" alt="Quiz" style="max-width: 45%;">
         </div>
       </div>
 
       <div id="card3" class="card">
-         <div id="activeCard" class="card"></div>
         <button class="close-btn">✖</button>
-        <strong>Temp:</strong> "10:30 - 11:00 (30 min)"<br><br>
-        <strong>Description:</strong> "Un moment convivial autour d’un café, de rafraîchissements et d’un fond musical pour se détendre, échanger et recharger les batteries.."<br>
-        <div style="display: flex;">
-        <img src="images/pauseCafé.jpg" alt="Pause café"style="margin-left: 40px;margin-right:70px;" />
-          <img src="images/pausemusical.jpg" alt="Pause café" style="margin-left: 10px;margin-right:10px;" />
+        <strong>Temp:</strong> 10:30 - 11:00 (30 min)<br><br>
+        <strong>Description:</strong> Un moment convivial autour d’un café, de rafraîchissements et d’un fond musical pour se détendre et échanger.<br><br>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px;">
+          <img src="images/pauseCafé.jpg" alt="Pause café" style="max-width: 45%;">
+          <img src="images/pausemusical.jpg" alt="Pause musicale" style="max-width: 45%;">
         </div>
       </div>
 
       <div id="card4" class="card">
-         <div id="activeCard" class="card"></div>
         <button class="close-btn">✖</button>
-        <strong>Temp:</strong> "09:20 - 10:30 (1h10)"<br>
-        <strong>Description:</strong> "Lancement officiel de l’événement avec présentation des objectifs, des partenaires clés et du programme. Une conférence inspirante  suivie des success story motivantes pour illustrer l’impact concret de l’initiative."<br>
-        <img src="images/conference12.jpg" alt="Cérémonie" />
+        <strong>Temp:</strong> 09:20 - 10:30 (1h10)<br><br>
+        <strong>Description:</strong> Lancement officiel de l’événement avec présentation des objectifs, partenaires clés et programme. Conférence inspirante et success stories.<br>
+        <img src="images/conference12.jpg" alt="Cérémonie">
       </div>
 
       <div id="card5" class="card">
-         <div id="activeCard" class="card"></div>
         <button class="close-btn">✖</button>
-        <strong>Temp:</strong> "09:00 - 09:20 (20 min)"<br><br>
-        <strong>Description:</strong> "Bienvenue ! Enregistrement et accueil des participants. <br>Prenez votre badge et préparez-vous pour la journée."<br>
-        <img src="images/RECEPTION.jpg" alt="Accueil" />
+        <strong>Temp:</strong> 09:00 - 09:20 (20 min)<br><br>
+        <strong>Description:</strong> Bienvenue ! Enregistrement et accueil des participants. Prenez votre badge et préparez-vous pour la journée.<br>
+        <img src="images/RECEPTION.jpg" alt="Accueil">
       </div>
+
     </div>
   </div>
 
-   <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
